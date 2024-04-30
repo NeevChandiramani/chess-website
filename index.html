@@ -8,6 +8,8 @@
 </head>
 <body>
     <div class="container">
+        <div class="background-container"></div>
+        <div class="background-overlay"></div>
         <header>
             <h1>Chess Rules</h1>
         </header>
@@ -33,7 +35,13 @@
                 <p>Here's a video explaining the rules in detail:</p>
                 <div class="video-container">
                     <!-- Embedded YouTube video -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=iPXcfS0UDlI&ab_channel=TripleSGames" frameborder="0" allowfullscreen></iframe>
+                    <div style="text-align: center;">
+                        <video width="560" height="315" controls> 
+                            <source src="chess.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    </video>
                 </div>
             </section>
         </main>

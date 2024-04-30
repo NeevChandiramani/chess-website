@@ -34,3 +34,26 @@ main {
     color: #E4E4E4;
 }
 
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg'); /* Updated filename */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Adjust the blur intensity as needed */
+    z-index: -1; /* Ensure the background stays behind other content */
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.37); /* Adjust the opacity (0.5) for darkness */
+    z-index: -1; /* Ensure the overlay stays behind other content */
+}
+
