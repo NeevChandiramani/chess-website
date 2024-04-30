@@ -5,16 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess Rules</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpg" href="icon.jpg">
 </head>
 <body>
     <div class="container">
         <div class="background-container"></div>
         <div class="background-overlay"></div>
         <header>
+            <div class="language-menu">
+                <div class="language-selector">
+                    <button id="english-button" class="language-button"><img src="flag_enn.png" alt="English"></button>
+                    <button id="french-button" class="language-button"><img src="flag_fr.png" alt="French"></button>
+                    <div class="language-dropdown">
+                        <a href="#" class="language-item"><img src="flag_enn.png" alt="English"> English</a>
+                        <a href="#" class="language-item"><img src="flag_fr.png" alt="French"> Français</a>
+                    </div>
+                </div>
+            </div>
             <h1>Chess Rules</h1>
         </header>
         <main>
-            <section id="rules">
+            <section id="english-content">
                 <h2>Rules of Chess</h2>
                 <p>Chess is a two-player strategy game played on a checkered gameboard called a chessboard. The objective is to checkmate your opponent's king, putting it into a position where it is in check and there is no legal move to escape.</p>
                 <h3>Basic Setup</h3>
@@ -41,8 +52,37 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    </video>
                 </div>
+            </section>
+
+            <section id="french-content" style="display: none;">
+                <h2>Règles des Échecs</h2>
+                <p>Les échecs sont un jeu de stratégie à deux joueurs joué sur un échiquier quadrillé appelé échiquier. L'objectif est de mettre en échec et mat le roi de votre adversaire, le plaçant dans une position où il est en échec et où il n'y a aucun coup légal pour s'échapper.</p>
+                <h3>Configuration de Base</h3>
+                <p>Le jeu se joue sur une grille 8x8, avec des cases alternées noires et blanches. Chaque joueur commence avec 16 pièces : un roi, une dame, deux tours, deux cavaliers, deux fous et huit pions. Voici comment les pièces sont disposées :</p>
+                <img src="Chessboard2.png" alt="Configuration des Échecs" style="display: block; margin: 0 auto; width: 25%;">
+                <h3>Déplacement des Pièces</h3>
+                <p>Chaque type de pièce d'échecs a son propre mode de déplacement unique sur l'échiquier. Voici un bref aperçu :</p>
+                <ul>
+                    <li><strong>Roi :</strong> Peut se déplacer d'une case dans n'importe quelle direction.</li>
+                    <li><strong>Dame :</strong> Peut se déplacer sur un nombre quelconque de cases en diagonale, horizontalement ou verticalement.</li>
+                    <li><strong>Tour :</strong> Peut se déplacer sur un nombre quelconque de cases horizontalement ou verticalement.</li>
+                    <li><strong>Cavalier :</strong> Se déplace en forme de L, deux cases dans une direction et puis une case perpendiculairement.</li>
+                    <li><strong>Fou :</strong> Peut se déplacer sur un nombre quelconque de cases en diagonale.</li>
+                    <li><strong>Pion :</strong> Avance d'une case, mais capture en diagonale.</li>
+                </ul>
+                <h3>Échec et Mat</h3>
+                <p>La partie se termine lorsqu'un roi est dans une position où il peut être capturé (en échec) et qu'il n'y a aucun coup légal pour s'échapper (échec et mat).</p>
+                <p>Voici une vidéo expliquant les règles en détail :</p>
+                <div class="video-container">
+                    <!-- Embedded YouTube video -->
+                    <div style="text-align: center;">
+                        <video width="560" height="315" controls> 
+                            <source src="chess_fr.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la balise vidéo.
+                        </video>
+                    </div>
+                </div>            
             </section>
         </main>
     </div>

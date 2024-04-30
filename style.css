@@ -40,7 +40,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('background.jpg'); /* Updated filename */
+    background-image: url('background.jpg'); 
     background-size: cover;
     background-position: center;
     filter: blur(5px); /* Adjust the blur intensity as needed */
@@ -57,3 +57,51 @@ main {
     z-index: -1; /* Ensure the overlay stays behind other content */
 }
 
+.language-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.language-selector {
+    position: relative;
+}
+
+.language-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 30px; 
+    height: auto; 
+}
+
+.language-button img {
+    width: 100%;
+    height: auto;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 0;
+    display: none;
+    width: 30px; 
+    height: auto; 
+}
+
+.language-item {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.language-item:hover {
+    background-color: #f0f0f0;
+}
