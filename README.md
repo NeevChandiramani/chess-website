@@ -1,5 +1,3 @@
-# chess-website
-
 # Chess Rules Website
 
 This website provides a comprehensive guide to the rules of chess, including basic setup, movement of pieces, and how to achieve checkmate. It includes illustrations and embedded videos to help players understand the game better.
